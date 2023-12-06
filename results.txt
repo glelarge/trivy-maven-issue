@@ -1,0 +1,336 @@
+latest: Pulling from aquasec/trivy
+Digest: sha256:27448497c3ae9cb81bdac3b420226392422b976a921f7461caf97ce5b591dcc0
+Status: Image is up to date for aquasec/trivy:latest
+Version: 0.48.0
+Vulnerability DB:
+  Version: 2
+  UpdatedAt: 2023-12-05 18:11:47.850893282 +0000 UTC
+  NextUpdate: 2023-12-06 00:11:47.850892891 +0000 UTC
+  DownloadedAt: 2023-12-05 18:13:55.667231472 +0000 UTC
+Java DB:
+  Version: 1
+  UpdatedAt: 2023-05-10 00:49:18.553984499 +0000 UTC
+  NextUpdate: 2023-05-13 00:49:18.553984099 +0000 UTC
+  DownloadedAt: 2023-05-10 16:04:26.298182537 +0000 UTC
+
+
+====================================================
+trivy on project myproject-simple
+====================================================
+2023-12-05T18:14:31.929Z	[DEBUG]	Severities: ["UNKNOWN" "LOW" "MEDIUM" "HIGH" "CRITICAL"]
+2023-12-05T18:14:31.931Z	[DEBUG]	Ignore statuses	{"statuses": null}
+2023-12-05T18:14:31.934Z	[DEBUG]	cache dir:  /root/.cache/trivy
+2023-12-05T18:14:31.934Z	[DEBUG]	DB update was skipped because the local DB is the latest
+2023-12-05T18:14:31.935Z	[DEBUG]	DB Schema: 2, UpdatedAt: 2023-12-05 18:11:47.850893282 +0000 UTC, NextUpdate: 2023-12-06 00:11:47.850892891 +0000 UTC, DownloadedAt: 2023-12-05 18:13:55.667231472 +0000 UTC
+2023-12-05T18:14:31.935Z	[INFO]	Vulnerability scanning is enabled
+2023-12-05T18:14:31.935Z	[DEBUG]	Vulnerability type:  [os library]
+2023-12-05T18:14:31.935Z	[INFO]	Secret scanning is enabled
+2023-12-05T18:14:31.935Z	[INFO]	If your scanning is slow, please try '--scanners vuln' to disable secret scanning
+2023-12-05T18:14:31.935Z	[INFO]	Please see also https://aquasecurity.github.io/trivy/v0.48/docs/scanner/secret/#recommendation for faster secret detection
+2023-12-05T18:14:31.935Z	[DEBUG]	Enabling misconfiguration scanners: [azure-arm cloudformation dockerfile helm kubernetes terraform terraformplan]
+2023-12-05T18:14:31.935Z	[DEBUG]	No secret config detected: trivy-secret.yaml
+2023-12-05T18:14:31.935Z	[DEBUG]	The nuget packages directory couldn't be found. License search disabled
+2023-12-05T18:14:31.935Z	[DEBUG]	Walk the file tree rooted at '/root/myproject' in parallel
+2023-12-05T18:14:31.937Z	[DEBUG]	Resolving org.camunda.bpm:camunda-bom:7.17.0...
+2023-12-05T18:14:31.938Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-root:7.17.0
+2023-12-05T18:14:31.940Z	[DEBUG]	Start parent: org.camunda:camunda-bpm-release-parent:2.2.4
+2023-12-05T18:14:31.941Z	[DEBUG]	Start parent: org.camunda:camunda-release-parent:3.7.1
+2023-12-05T18:14:31.942Z	[DEBUG]	Exit parent: org.camunda:camunda-release-parent:3.7.1
+2023-12-05T18:14:31.942Z	[DEBUG]	Exit parent: org.camunda:camunda-bpm-release-parent:2.2.4
+2023-12-05T18:14:31.942Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-root:7.17.0
+2023-12-05T18:14:31.942Z	[DEBUG]	Resolving org.camunda.bpm:camunda-engine:7.17.0...
+2023-12-05T18:14:31.944Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:31.945Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-parent:7.17.0
+2023-12-05T18:14:31.945Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-root:7.17.0
+2023-12-05T18:14:31.945Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-root:7.17.0
+2023-12-05T18:14:31.946Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-parent:7.17.0
+2023-12-05T18:14:31.946Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:31.946Z	[DEBUG]	Resolving org.camunda.bpm:camunda-core-internal-dependencies:7.17.0...
+2023-12-05T18:14:31.947Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-parent:7.17.0
+2023-12-05T18:14:31.947Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-parent:7.17.0
+2023-12-05T18:14:31.947Z	[DEBUG]	Resolving org.springframework:spring-framework-bom:5.2.19.RELEASE...
+2023-12-05T18:14:31.949Z	[DEBUG]	Resolving org.camunda.bpm.model:camunda-bpmn-model:7.17.0...
+2023-12-05T18:14:31.949Z	[DEBUG]	Start parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:31.949Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:31.949Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:31.949Z	[DEBUG]	Exit parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:31.950Z	[DEBUG]	Resolving org.camunda.bpm.model:camunda-cmmn-model:7.17.0...
+2023-12-05T18:14:31.950Z	[DEBUG]	Start parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:31.950Z	[DEBUG]	Exit parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:31.951Z	[DEBUG]	Resolving org.camunda.bpm.dmn:camunda-engine-dmn:7.17.0...
+2023-12-05T18:14:31.951Z	[DEBUG]	Start parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:31.951Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:31.951Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:31.952Z	[DEBUG]	Exit parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:31.952Z	[DEBUG]	Resolving org.camunda.commons:camunda-commons-logging:1.10.0...
+2023-12-05T18:14:31.953Z	[DEBUG]	Start parent: org.camunda.commons:camunda-commons-root:1.10.0
+2023-12-05T18:14:31.953Z	[DEBUG]	Start parent: org.camunda.commons:camunda-commons-bom:1.10.0
+2023-12-05T18:14:31.953Z	[DEBUG]	Start parent: org.camunda:camunda-bpm-release-parent:2.0.0
+2023-12-05T18:14:31.953Z	[DEBUG]	Start parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:31.954Z	[DEBUG]	Exit parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:31.954Z	[DEBUG]	Exit parent: org.camunda:camunda-bpm-release-parent:2.0.0
+2023-12-05T18:14:31.954Z	[DEBUG]	Exit parent: org.camunda.commons:camunda-commons-bom:1.10.0
+2023-12-05T18:14:31.954Z	[DEBUG]	Exit parent: org.camunda.commons:camunda-commons-root:1.10.0
+2023-12-05T18:14:31.954Z	[DEBUG]	Resolving org.camunda.commons:camunda-commons-typed-values:7.17.0...
+2023-12-05T18:14:31.955Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:31.955Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:31.955Z	[DEBUG]	Resolving org.mybatis:mybatis:3.5.6...
+2023-12-05T18:14:31.956Z	[DEBUG]	Start parent: org.mybatis:mybatis-parent:32
+2023-12-05T18:14:31.958Z	[DEBUG]	Exit parent: org.mybatis:mybatis-parent:32
+2023-12-05T18:14:31.958Z	[DEBUG]	Resolving org.springframework:spring-beans:5.2.19.RELEASE...
+2023-12-05T18:14:31.958Z	[DEBUG]	Resolving joda-time:joda-time:2.1...
+2023-12-05T18:14:31.959Z	[DEBUG]	Resolving org.camunda.connect:camunda-connect-core:1.5.2...
+2023-12-05T18:14:31.959Z	[DEBUG]	Start parent: org.camunda.connect:camunda-connect-root:1.5.2
+2023-12-05T18:14:31.959Z	[DEBUG]	Start parent: org.camunda.connect:camunda-connect-bom:1.5.2
+2023-12-05T18:14:31.960Z	[DEBUG]	Start parent: org.camunda:camunda-bpm-release-parent:2.2.1
+2023-12-05T18:14:31.960Z	[DEBUG]	Start parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:31.960Z	[DEBUG]	Exit parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:31.960Z	[DEBUG]	Exit parent: org.camunda:camunda-bpm-release-parent:2.2.1
+2023-12-05T18:14:31.960Z	[DEBUG]	Exit parent: org.camunda.connect:camunda-connect-bom:1.5.2
+2023-12-05T18:14:31.960Z	[DEBUG]	Exit parent: org.camunda.connect:camunda-connect-root:1.5.2
+2023-12-05T18:14:31.960Z	[DEBUG]	Resolving org.camunda.commons:camunda-commons-bom:1.9.0...
+2023-12-05T18:14:31.960Z	[DEBUG]	Start parent: org.camunda:camunda-bpm-release-parent:2.0.0
+2023-12-05T18:14:31.960Z	[DEBUG]	Exit parent: org.camunda:camunda-bpm-release-parent:2.0.0
+2023-12-05T18:14:31.961Z	[DEBUG]	Resolving org.camunda.bpm.model:camunda-xml-model:7.17.0...
+2023-12-05T18:14:31.961Z	[DEBUG]	Start parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:31.961Z	[DEBUG]	Exit parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:31.961Z	[DEBUG]	Resolving org.camunda.commons:camunda-commons-utils:...
+2023-12-05T18:14:32.757Z	[DEBUG]	org.camunda.commons:camunda-commons-utils: was not found in local/remote repositories
+2023-12-05T18:14:32.757Z	[DEBUG]	Resolving org.camunda.bpm.model:camunda-dmn-model:7.17.0...
+2023-12-05T18:14:32.758Z	[DEBUG]	Start parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:32.758Z	[DEBUG]	Exit parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:32.759Z	[DEBUG]	Resolving org.camunda.bpm.dmn:camunda-engine-feel-api:7.17.0...
+2023-12-05T18:14:32.759Z	[DEBUG]	Start parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:32.759Z	[DEBUG]	Exit parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:32.759Z	[DEBUG]	Resolving org.camunda.bpm.dmn:camunda-engine-feel-juel:7.17.0...
+2023-12-05T18:14:32.760Z	[DEBUG]	Start parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:32.760Z	[DEBUG]	Exit parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:32.760Z	[DEBUG]	Resolving org.camunda.bpm.dmn:camunda-engine-feel-scala:7.17.0...
+2023-12-05T18:14:32.760Z	[DEBUG]	Start parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:32.761Z	[DEBUG]	Exit parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:32.761Z	[DEBUG]	Resolving org.camunda.feel:feel-engine:1.13.3...
+2023-12-05T18:14:32.762Z	[DEBUG]	Start parent: org.camunda:camunda-bpm-release-parent:2.2.2
+2023-12-05T18:14:32.762Z	[DEBUG]	Start parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:32.762Z	[DEBUG]	Exit parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:32.762Z	[DEBUG]	Exit parent: org.camunda:camunda-bpm-release-parent:2.2.2
+2023-12-05T18:14:32.762Z	[DEBUG]	Resolving org.slf4j:slf4j-api:1.7.26...
+2023-12-05T18:14:32.763Z	[DEBUG]	Start parent: org.slf4j:slf4j-parent:1.7.26
+2023-12-05T18:14:32.763Z	[DEBUG]	Exit parent: org.slf4j:slf4j-parent:1.7.26
+2023-12-05T18:14:32.763Z	[DEBUG]	Resolving org.camunda.commons:camunda-commons-utils:1.10.0...
+2023-12-05T18:14:32.764Z	[DEBUG]	Start parent: org.camunda.commons:camunda-commons-root:1.10.0
+2023-12-05T18:14:32.764Z	[DEBUG]	Exit parent: org.camunda.commons:camunda-commons-root:1.10.0
+2023-12-05T18:14:32.764Z	[DEBUG]	Resolving org.springframework:spring-core:5.2.19.RELEASE...
+2023-12-05T18:14:32.764Z	[DEBUG]	Resolving org.springframework:spring-jcl:5.2.19.RELEASE...
+2023-12-05T18:14:32.770Z	[DEBUG]	OS is not detected.
+2023-12-05T18:14:32.770Z	[DEBUG]	Detected OS: unknown
+2023-12-05T18:14:32.770Z	[INFO]	Number of language-specific files: 1
+2023-12-05T18:14:32.770Z	[INFO]	Detecting pom vulnerabilities...
+2023-12-05T18:14:32.770Z	[DEBUG]	Detecting library vulnerabilities, type: pom, path: pom.xml
+
+pom.xml (pom)
+=============
+Total: 6 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 3, CRITICAL: 1)
+
+┌──────────────────────────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────────────────────┬───────────────────────────────────────────────────────┐
+│             Library              │ Vulnerability  │ Severity │ Status │ Installed Version │         Fixed Version         │                         Title                         │
+├──────────────────────────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────────────────────┼───────────────────────────────────────────────────────┤
+│ org.springframework:spring-beans │ CVE-2022-22965 │ CRITICAL │ fixed  │ 5.2.19.RELEASE    │ 5.2.20.RELEASE, 5.3.18        │ RCE via Data Binding on JDK 9+                        │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2022-22965            │
+├──────────────────────────────────┼────────────────┼──────────┤        │                   ├───────────────────────────────┼───────────────────────────────────────────────────────┤
+│ org.springframework:spring-core  │ CVE-2022-22968 │ HIGH     │        │                   │ 5.3.19, 5.2.21                │ Data Binding Rules Vulnerability                      │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2022-22968            │
+│                                  ├────────────────┤          │        │                   ├───────────────────────────────┼───────────────────────────────────────────────────────┤
+│                                  │ CVE-2022-22970 │          │        │                   │ 5.2.22.RELEASE, 5.3.20        │ DoS via data binding to multipartFile or servlet part │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2022-22970            │
+│                                  ├────────────────┤          │        │                   ├───────────────────────────────┼───────────────────────────────────────────────────────┤
+│                                  │ CVE-2023-20863 │          │        │                   │ 6.0.8, 5.3.27, 5.2.24.RELEASE │ Spring Expression DoS Vulnerability                   │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2023-20863            │
+│                                  ├────────────────┼──────────┤        │                   ├───────────────────────────────┼───────────────────────────────────────────────────────┤
+│                                  │ CVE-2022-22971 │ MEDIUM   │        │                   │ 5.3.20, 5.2.22.RELEASE        │ DoS with STOMP over WebSocket                         │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2022-22971            │
+│                                  ├────────────────┤          │        │                   ├───────────────────────────────┼───────────────────────────────────────────────────────┤
+│                                  │ CVE-2023-20861 │          │        │                   │ 6.0.7, 5.3.26, 5.2.23.RELEASE │ springframework: Spring Expression DoS Vulnerability  │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2023-20861            │
+└──────────────────────────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────────────────────┴───────────────────────────────────────────────────────┘
+
+
+====================================================
+trivy on project myproject-level2
+====================================================
+2023-12-05T18:14:33.766Z	[DEBUG]	Severities: ["UNKNOWN" "LOW" "MEDIUM" "HIGH" "CRITICAL"]
+2023-12-05T18:14:33.767Z	[DEBUG]	Ignore statuses	{"statuses": null}
+2023-12-05T18:14:33.772Z	[DEBUG]	cache dir:  /root/.cache/trivy
+2023-12-05T18:14:33.772Z	[DEBUG]	DB update was skipped because the local DB is the latest
+2023-12-05T18:14:33.772Z	[DEBUG]	DB Schema: 2, UpdatedAt: 2023-12-05 18:11:47.850893282 +0000 UTC, NextUpdate: 2023-12-06 00:11:47.850892891 +0000 UTC, DownloadedAt: 2023-12-05 18:13:55.667231472 +0000 UTC
+2023-12-05T18:14:33.772Z	[INFO]	Vulnerability scanning is enabled
+2023-12-05T18:14:33.772Z	[DEBUG]	Vulnerability type:  [os library]
+2023-12-05T18:14:33.772Z	[INFO]	Secret scanning is enabled
+2023-12-05T18:14:33.772Z	[INFO]	If your scanning is slow, please try '--scanners vuln' to disable secret scanning
+2023-12-05T18:14:33.772Z	[INFO]	Please see also https://aquasecurity.github.io/trivy/v0.48/docs/scanner/secret/#recommendation for faster secret detection
+2023-12-05T18:14:33.772Z	[DEBUG]	Enabling misconfiguration scanners: [azure-arm cloudformation dockerfile helm kubernetes terraform terraformplan]
+2023-12-05T18:14:33.772Z	[DEBUG]	No secret config detected: trivy-secret.yaml
+2023-12-05T18:14:33.772Z	[DEBUG]	The nuget packages directory couldn't be found. License search disabled
+2023-12-05T18:14:33.773Z	[DEBUG]	Walk the file tree rooted at '/root/myproject' in parallel
+2023-12-05T18:14:33.774Z	[DEBUG]	Resolving org.trivyissue:myproject-bom:1.0-SNAPSHOT...
+2023-12-05T18:14:33.774Z	[DEBUG]	Resolving org.camunda.bpm:camunda-engine:...
+2023-12-05T18:14:33.859Z	[DEBUG]	org.camunda.bpm:camunda-engine: was not found in local/remote repositories
+2023-12-05T18:14:33.863Z	[DEBUG]	OS is not detected.
+2023-12-05T18:14:33.863Z	[DEBUG]	Detected OS: unknown
+2023-12-05T18:14:33.863Z	[INFO]	Number of language-specific files: 1
+2023-12-05T18:14:33.863Z	[INFO]	Detecting pom vulnerabilities...
+2023-12-05T18:14:33.863Z	[DEBUG]	Detecting library vulnerabilities, type: pom, path: pom.xml
+
+
+====================================================
+Test workaround on project myproject-level2
+====================================================
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.trivyissue:myproject-level2 >-------------------
+[INFO] Building myproject-level2 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-help-plugin:3.4.0:effective-pom (default-cli) @ myproject-level2 ---
+[INFO] Effective-POM written to: /home/user/git/trivy-maven-issue/myproject-level2/pom_flatten.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.659 s
+[INFO] Finished at: 2023-12-05T19:14:35+01:00
+[INFO] ------------------------------------------------------------------------
+
+----------------------------------------------------
+trivy on workaround myproject-level2
+2023-12-05T18:14:36.666Z	[DEBUG]	Severities: ["UNKNOWN" "LOW" "MEDIUM" "HIGH" "CRITICAL"]
+2023-12-05T18:14:36.667Z	[DEBUG]	Ignore statuses	{"statuses": null}
+2023-12-05T18:14:36.671Z	[DEBUG]	cache dir:  /root/.cache/trivy
+2023-12-05T18:14:36.671Z	[DEBUG]	DB update was skipped because the local DB is the latest
+2023-12-05T18:14:36.671Z	[DEBUG]	DB Schema: 2, UpdatedAt: 2023-12-05 18:11:47.850893282 +0000 UTC, NextUpdate: 2023-12-06 00:11:47.850892891 +0000 UTC, DownloadedAt: 2023-12-05 18:13:55.667231472 +0000 UTC
+2023-12-05T18:14:36.671Z	[INFO]	Vulnerability scanning is enabled
+2023-12-05T18:14:36.671Z	[DEBUG]	Vulnerability type:  [os library]
+2023-12-05T18:14:36.671Z	[INFO]	Secret scanning is enabled
+2023-12-05T18:14:36.671Z	[INFO]	If your scanning is slow, please try '--scanners vuln' to disable secret scanning
+2023-12-05T18:14:36.671Z	[INFO]	Please see also https://aquasecurity.github.io/trivy/v0.48/docs/scanner/secret/#recommendation for faster secret detection
+2023-12-05T18:14:36.671Z	[DEBUG]	Enabling misconfiguration scanners: [azure-arm cloudformation dockerfile helm kubernetes terraform terraformplan]
+2023-12-05T18:14:36.671Z	[DEBUG]	No secret config detected: trivy-secret.yaml
+2023-12-05T18:14:36.671Z	[DEBUG]	The nuget packages directory couldn't be found. License search disabled
+2023-12-05T18:14:36.672Z	[DEBUG]	Walk the file tree rooted at '/root/myproject' in parallel
+2023-12-05T18:14:36.676Z	[DEBUG]	Resolving org.camunda.bpm:camunda-engine:7.17.0...
+2023-12-05T18:14:36.680Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:36.681Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-parent:7.17.0
+2023-12-05T18:14:36.681Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-root:7.17.0
+2023-12-05T18:14:36.682Z	[DEBUG]	Start parent: org.camunda:camunda-bpm-release-parent:2.2.4
+2023-12-05T18:14:36.682Z	[DEBUG]	Start parent: org.camunda:camunda-release-parent:3.7.1
+2023-12-05T18:14:36.683Z	[DEBUG]	Exit parent: org.camunda:camunda-release-parent:3.7.1
+2023-12-05T18:14:36.683Z	[DEBUG]	Exit parent: org.camunda:camunda-bpm-release-parent:2.2.4
+2023-12-05T18:14:36.683Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-root:7.17.0
+2023-12-05T18:14:36.683Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-parent:7.17.0
+2023-12-05T18:14:36.684Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:36.684Z	[DEBUG]	Resolving org.camunda.bpm:camunda-core-internal-dependencies:7.17.0...
+2023-12-05T18:14:36.685Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-parent:7.17.0
+2023-12-05T18:14:36.685Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-parent:7.17.0
+2023-12-05T18:14:36.685Z	[DEBUG]	Resolving org.springframework:spring-framework-bom:5.2.19.RELEASE...
+2023-12-05T18:14:36.686Z	[DEBUG]	Resolving org.camunda.bpm:camunda-bom:7.17.0...
+2023-12-05T18:14:36.686Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-root:7.17.0
+2023-12-05T18:14:36.686Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-root:7.17.0
+2023-12-05T18:14:36.688Z	[DEBUG]	Resolving org.camunda.bpm.model:camunda-bpmn-model:7.17.0...
+2023-12-05T18:14:36.688Z	[DEBUG]	Start parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:36.688Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:36.688Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:36.688Z	[DEBUG]	Exit parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:36.689Z	[DEBUG]	Resolving org.camunda.bpm.model:camunda-cmmn-model:7.17.0...
+2023-12-05T18:14:36.689Z	[DEBUG]	Start parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:36.689Z	[DEBUG]	Exit parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:36.690Z	[DEBUG]	Resolving org.camunda.bpm.dmn:camunda-engine-dmn:7.17.0...
+2023-12-05T18:14:36.690Z	[DEBUG]	Start parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:36.690Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:36.690Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:36.690Z	[DEBUG]	Exit parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:36.691Z	[DEBUG]	Resolving org.camunda.commons:camunda-commons-logging:1.10.0...
+2023-12-05T18:14:36.691Z	[DEBUG]	Start parent: org.camunda.commons:camunda-commons-root:1.10.0
+2023-12-05T18:14:36.691Z	[DEBUG]	Start parent: org.camunda.commons:camunda-commons-bom:1.10.0
+2023-12-05T18:14:36.692Z	[DEBUG]	Start parent: org.camunda:camunda-bpm-release-parent:2.0.0
+2023-12-05T18:14:36.692Z	[DEBUG]	Start parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:36.692Z	[DEBUG]	Exit parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:36.693Z	[DEBUG]	Exit parent: org.camunda:camunda-bpm-release-parent:2.0.0
+2023-12-05T18:14:36.693Z	[DEBUG]	Exit parent: org.camunda.commons:camunda-commons-bom:1.10.0
+2023-12-05T18:14:36.693Z	[DEBUG]	Exit parent: org.camunda.commons:camunda-commons-root:1.10.0
+2023-12-05T18:14:36.693Z	[DEBUG]	Resolving org.camunda.commons:camunda-commons-typed-values:7.17.0...
+2023-12-05T18:14:36.693Z	[DEBUG]	Start parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:36.693Z	[DEBUG]	Exit parent: org.camunda.bpm:camunda-database-settings:7.17.0
+2023-12-05T18:14:36.694Z	[DEBUG]	Resolving org.mybatis:mybatis:3.5.6...
+2023-12-05T18:14:36.694Z	[DEBUG]	Start parent: org.mybatis:mybatis-parent:32
+2023-12-05T18:14:36.697Z	[DEBUG]	Exit parent: org.mybatis:mybatis-parent:32
+2023-12-05T18:14:36.697Z	[DEBUG]	Resolving org.springframework:spring-beans:5.2.19.RELEASE...
+2023-12-05T18:14:36.697Z	[DEBUG]	Resolving joda-time:joda-time:2.1...
+2023-12-05T18:14:36.698Z	[DEBUG]	Resolving org.camunda.connect:camunda-connect-core:1.5.2...
+2023-12-05T18:14:36.698Z	[DEBUG]	Start parent: org.camunda.connect:camunda-connect-root:1.5.2
+2023-12-05T18:14:36.698Z	[DEBUG]	Start parent: org.camunda.connect:camunda-connect-bom:1.5.2
+2023-12-05T18:14:36.699Z	[DEBUG]	Start parent: org.camunda:camunda-bpm-release-parent:2.2.1
+2023-12-05T18:14:36.699Z	[DEBUG]	Start parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:36.699Z	[DEBUG]	Exit parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:36.699Z	[DEBUG]	Exit parent: org.camunda:camunda-bpm-release-parent:2.2.1
+2023-12-05T18:14:36.699Z	[DEBUG]	Exit parent: org.camunda.connect:camunda-connect-bom:1.5.2
+2023-12-05T18:14:36.699Z	[DEBUG]	Exit parent: org.camunda.connect:camunda-connect-root:1.5.2
+2023-12-05T18:14:36.699Z	[DEBUG]	Resolving org.camunda.commons:camunda-commons-bom:1.9.0...
+2023-12-05T18:14:36.700Z	[DEBUG]	Start parent: org.camunda:camunda-bpm-release-parent:2.0.0
+2023-12-05T18:14:36.700Z	[DEBUG]	Exit parent: org.camunda:camunda-bpm-release-parent:2.0.0
+2023-12-05T18:14:36.700Z	[DEBUG]	Resolving org.camunda.bpm.model:camunda-xml-model:7.17.0...
+2023-12-05T18:14:36.700Z	[DEBUG]	Start parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:36.700Z	[DEBUG]	Exit parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:36.701Z	[DEBUG]	Resolving org.camunda.commons:camunda-commons-utils:1.10.0...
+2023-12-05T18:14:36.701Z	[DEBUG]	Start parent: org.camunda.commons:camunda-commons-root:1.10.0
+2023-12-05T18:14:36.701Z	[DEBUG]	Exit parent: org.camunda.commons:camunda-commons-root:1.10.0
+2023-12-05T18:14:36.701Z	[DEBUG]	Resolving org.camunda.bpm.model:camunda-dmn-model:7.17.0...
+2023-12-05T18:14:36.701Z	[DEBUG]	Start parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:36.701Z	[DEBUG]	Exit parent: org.camunda.bpm.model:camunda-model-apis:7.17.0
+2023-12-05T18:14:36.702Z	[DEBUG]	Resolving org.camunda.bpm.dmn:camunda-engine-feel-api:7.17.0...
+2023-12-05T18:14:36.702Z	[DEBUG]	Start parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:36.702Z	[DEBUG]	Exit parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:36.702Z	[DEBUG]	Resolving org.camunda.bpm.dmn:camunda-engine-feel-juel:7.17.0...
+2023-12-05T18:14:36.703Z	[DEBUG]	Start parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:36.703Z	[DEBUG]	Exit parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:36.703Z	[DEBUG]	Resolving org.camunda.bpm.dmn:camunda-engine-feel-scala:7.17.0...
+2023-12-05T18:14:36.704Z	[DEBUG]	Start parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:36.704Z	[DEBUG]	Exit parent: org.camunda.bpm.dmn:camunda-engine-dmn-root:7.17.0
+2023-12-05T18:14:36.704Z	[DEBUG]	Resolving org.camunda.feel:feel-engine:1.13.3...
+2023-12-05T18:14:36.705Z	[DEBUG]	Start parent: org.camunda:camunda-bpm-release-parent:2.2.2
+2023-12-05T18:14:36.705Z	[DEBUG]	Start parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:36.705Z	[DEBUG]	Exit parent: org.camunda:camunda-release-parent:3.7
+2023-12-05T18:14:36.705Z	[DEBUG]	Exit parent: org.camunda:camunda-bpm-release-parent:2.2.2
+2023-12-05T18:14:36.705Z	[DEBUG]	Resolving org.slf4j:slf4j-api:1.7.26...
+2023-12-05T18:14:36.706Z	[DEBUG]	Start parent: org.slf4j:slf4j-parent:1.7.26
+2023-12-05T18:14:36.706Z	[DEBUG]	Exit parent: org.slf4j:slf4j-parent:1.7.26
+2023-12-05T18:14:36.706Z	[DEBUG]	Resolving org.springframework:spring-core:5.2.19.RELEASE...
+2023-12-05T18:14:36.707Z	[DEBUG]	Resolving org.springframework:spring-jcl:5.2.19.RELEASE...
+2023-12-05T18:14:36.709Z	[DEBUG]	OS is not detected.
+2023-12-05T18:14:36.709Z	[DEBUG]	Detected OS: unknown
+2023-12-05T18:14:36.709Z	[INFO]	Number of language-specific files: 1
+2023-12-05T18:14:36.709Z	[INFO]	Detecting pom vulnerabilities...
+2023-12-05T18:14:36.709Z	[DEBUG]	Detecting library vulnerabilities, type: pom, path: pom.xml
+
+pom.xml (pom)
+=============
+Total: 6 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 3, CRITICAL: 1)
+
+┌──────────────────────────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────────────────────┬───────────────────────────────────────────────────────┐
+│             Library              │ Vulnerability  │ Severity │ Status │ Installed Version │         Fixed Version         │                         Title                         │
+├──────────────────────────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────────────────────┼───────────────────────────────────────────────────────┤
+│ org.springframework:spring-beans │ CVE-2022-22965 │ CRITICAL │ fixed  │ 5.2.19.RELEASE    │ 5.2.20.RELEASE, 5.3.18        │ RCE via Data Binding on JDK 9+                        │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2022-22965            │
+├──────────────────────────────────┼────────────────┼──────────┤        │                   ├───────────────────────────────┼───────────────────────────────────────────────────────┤
+│ org.springframework:spring-core  │ CVE-2022-22968 │ HIGH     │        │                   │ 5.3.19, 5.2.21                │ Data Binding Rules Vulnerability                      │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2022-22968            │
+│                                  ├────────────────┤          │        │                   ├───────────────────────────────┼───────────────────────────────────────────────────────┤
+│                                  │ CVE-2022-22970 │          │        │                   │ 5.2.22.RELEASE, 5.3.20        │ DoS via data binding to multipartFile or servlet part │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2022-22970            │
+│                                  ├────────────────┤          │        │                   ├───────────────────────────────┼───────────────────────────────────────────────────────┤
+│                                  │ CVE-2023-20863 │          │        │                   │ 6.0.8, 5.3.27, 5.2.24.RELEASE │ Spring Expression DoS Vulnerability                   │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2023-20863            │
+│                                  ├────────────────┼──────────┤        │                   ├───────────────────────────────┼───────────────────────────────────────────────────────┤
+│                                  │ CVE-2022-22971 │ MEDIUM   │        │                   │ 5.3.20, 5.2.22.RELEASE        │ DoS with STOMP over WebSocket                         │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2022-22971            │
+│                                  ├────────────────┤          │        │                   ├───────────────────────────────┼───────────────────────────────────────────────────────┤
+│                                  │ CVE-2023-20861 │          │        │                   │ 6.0.7, 5.3.26, 5.2.23.RELEASE │ springframework: Spring Expression DoS Vulnerability  │
+│                                  │                │          │        │                   │                               │ https://avd.aquasec.com/nvd/cve-2023-20861            │
+└──────────────────────────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────────────────────┴───────────────────────────────────────────────────────┘
