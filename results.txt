@@ -171,7 +171,7 @@ trivy on project myproject-level2
 2023-12-05T18:14:33.772Z	[DEBUG]	No secret config detected: trivy-secret.yaml
 2023-12-05T18:14:33.772Z	[DEBUG]	The nuget packages directory couldn't be found. License search disabled
 2023-12-05T18:14:33.773Z	[DEBUG]	Walk the file tree rooted at '/root/myproject' in parallel
-2023-12-05T18:14:33.774Z	[DEBUG]	Resolving org.trivyissue:myproject-bom:1.0-SNAPSHOT...
+2023-12-05T18:14:33.774Z	[DEBUG]	Resolving fr.lelarge.dev.trivyissue:myproject-bom:1.0-SNAPSHOT...
 2023-12-05T18:14:33.774Z	[DEBUG]	Resolving org.camunda.bpm:camunda-engine:...
 2023-12-05T18:14:33.859Z	[DEBUG]	org.camunda.bpm:camunda-engine: was not found in local/remote repositories
 2023-12-05T18:14:33.863Z	[DEBUG]	OS is not detected.
@@ -186,7 +186,7 @@ Test workaround on project myproject-level2
 ====================================================
 [INFO] Scanning for projects...
 [INFO] 
-[INFO] ------------------< org.trivyissue:myproject-level2 >-------------------
+[INFO] ------------------< fr.lelarge.dev.trivyissue:myproject-level2 >-------------------
 [INFO] Building myproject-level2 1.0-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 

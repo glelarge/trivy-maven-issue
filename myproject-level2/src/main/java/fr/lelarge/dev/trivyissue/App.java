@@ -1,4 +1,4 @@
-package org.trivyissue;
+package fr.lelarge.dev.trivyissue;
 
 /**
  * Hello world!
